@@ -1,90 +1,49 @@
-import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
-
 import javax.imageio.ImageIO;
 
-/**
- * This program was taken from https://www.codejava.net/java-se/graphics/how-to-resize-images-in-java
- * demonstrates how to resize an image. I'm going to refactor it.
- */
 public class ImageResizer {
 
-    /**
-     * Resizes an image to a absolute width and height (the image may not be
-     * proportional)
-     * @param inputImagePath Path of the original image
-     * @param outputImagePath Path to save the resized image
-     * @param scaledWidth absolute width in pixels
-     * @param scaledHeight absolute height in pixels
-     * @throws IOException
-     */
-    public static void resize(String inputImagePath,
-                              String outputImagePath, int scaledWidth, int scaledHeight)
-            throws IOException {
-        // reads input image
-        File inputFile = new File(inputImagePath);
-        BufferedImage inputImage = ImageIO.read(inputFile);
+    public static int newWidth = 300;
 
-        // creates output image
-        BufferedImage outputImage = new BufferedImage(scaledWidth,
-                scaledHeight, inputImage.getType());
-
-        // scales the input image to the output image
-        Graphics2D g2d = outputImage.createGraphics();
-        g2d.drawImage(inputImage, 0, 0, scaledWidth, scaledHeight, null);
-        g2d.dispose();
-
-        // extracts extension of output file
-        String formatName = outputImagePath.substring(outputImagePath
-                .lastIndexOf(".") + 1);
-
-        // writes to output file
-        ImageIO.write(outputImage, formatName, new File(outputImagePath));
-    }
-
-    /**
-     * Resizes an image by a percentage of original size (proportional).
-     * @param inputImagePath Path of the original image
-     * @param outputImagePath Path to save the resized image
-     * @param percent a double number specifies percentage of the output image
-     * over the input image.
-     * @throws IOException
-     */
-    public static void resize(String inputImagePath,
-                              String outputImagePath, double percent) throws IOException {
-        File inputFile = new File(inputImagePath);
-        BufferedImage inputImage = ImageIO.read(inputFile);
-        int scaledWidth = (int) (inputImage.getWidth() * percent);
-        int scaledHeight = (int) (inputImage.getHeight() * percent);
-        resize(inputImagePath, outputImagePath, scaledWidth, scaledHeight);
-    }
-
-    /**
-     * Test resizing images
-     */
     public static void main(String[] args) {
-        String inputImagePath = "./src/images/original/1.JPG";
-        String outputImagePath1 = "./src/images/resized/tofixeddimensions.JPG";
-        String outputImagePath2 = "./src/images/resized/smaller.JPG";
-        String outputImagePath3 = "./src/images/resized/bigger.JPG";
+        String srcFolder = "./src/images/original";
+        String dstFolder = "./src/images/resized";
+
+        File srcFolderFile = new File(srcFolder);
+
+        File[] files = srcFolderFile.listFiles();
 
         try {
-            // resize to a fixed width (not proportional)
-            int scaledWidth = 1024;
-            int scaledHeight = 768;
-            ImageResizer.resize(inputImagePath, outputImagePath1, scaledWidth, scaledHeight);
+            assert files != null;
+            for (File file : files){
+                BufferedImage image = ImageIO.read(file);
 
-            // resize smaller by 50%
-            double percent = 0.5;
-            ImageResizer.resize(inputImagePath, outputImagePath2, percent);
+                if (image == null) continue;
 
-            // resize bigger by 50%
-            percent = 1.5;
-            ImageResizer.resize(inputImagePath, outputImagePath3, percent);
 
-        } catch (IOException ex) {
+                int newHeight = (int) Math.round(
+                        image.getHeight() / (image.getWidth() / (double) newWidth));
+
+                BufferedImage newImage =
+                        new BufferedImage(newWidth,newHeight,BufferedImage.TYPE_INT_RGB);
+
+                int widthStep = image.getWidth() / newWidth;
+                int heightStep = image.getHeight() / newHeight;
+
+                for (int x = 0; x < newWidth; x++){
+                    for (int y = 0; y < newHeight; y++){
+                        int rgb = image.getRGB(x * widthStep, y * heightStep);
+                        newImage.setRGB(x, y, rgb);
+                    }
+                }
+                File newFile = new File(dstFolder + "/" + file.getName());
+                ImageIO.write(newImage,"jpg", newFile);
+            }
+
+
+        }
+        catch (Exception ex) {
             System.out.println("Error resizing the image.");
             ex.printStackTrace();
         }
