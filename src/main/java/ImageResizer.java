@@ -1,21 +1,20 @@
+import lombok.AllArgsConstructor;
+
+import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import javax.imageio.ImageIO;
 
-public class ImageResizer {
 
-    public static int newWidth = 300;
+@AllArgsConstructor()
+public class ImageResizer extends Thread {
 
-    public static void main(String[] args) {
-        String srcFolder = "./src/images/original";
-        String dstFolder = "./src/images/resized";
+    private File[] files;
+    private int newWidth;
+    private String dstFolder;
 
-        File srcFolderFile = new File(srcFolder);
-
-        File[] files = srcFolderFile.listFiles();
-
+    @Override
+    public void run() {
         try {
-            assert files != null;
             for (File file : files){
                 BufferedImage image = ImageIO.read(file);
 
@@ -41,12 +40,10 @@ public class ImageResizer {
                 ImageIO.write(newImage,"jpg", newFile);
             }
 
-
         }
         catch (Exception ex) {
             System.out.println("Error resizing the image.");
             ex.printStackTrace();
         }
     }
-
 }
