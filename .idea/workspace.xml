@@ -1,54 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c59e2a5-8308-4f34-9376-3d1d9208ce30" name="Default Changelist" comment="Added images, refactored to use the method of the nearest neighbor">
-      <change afterPath="$PROJECT_DIR$/src/images/original/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/original/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/original/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/original/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/original/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/original/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/original/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/resized/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/resized/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/resized/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/resized/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/resized/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/resized/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/resized/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="7c59e2a5-8308-4f34-9376-3d1d9208ce30" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/images/original/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/original/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/original/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/original/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/original/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/resized/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/resized/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/resized/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/resized/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/resized/9.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/original/1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/original/10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/original/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/original/12.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/original/13.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/original/14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/original/2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/original/3.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/original/4.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/original/5.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/original/6.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/original/7.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/original/8.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/original/9.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/resized/1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/resized/10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/resized/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/resized/12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/resized/13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/resized/14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/resized/2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/resized/3.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/resized/4.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/resized/5.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/resized/6.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/resized/7.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/resized/8.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/resized/9.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ImageResizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageResizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ImageResizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ImageResizer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +30,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XZChc8gB8ni2zaf7qDT9MqbwjB" />
@@ -81,11 +52,11 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/images/original" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -133,46 +104,71 @@
       <option name="presentableId" value="Default" />
       <updated>1581244349972</updated>
     </task>
+    <task id="LOCAL-00001" summary="Created method to resize images in threads">
+      <created>1581275028271</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581275028271</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added images, refactored to use the method of the nearest neighbor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added images, refactored to use the method of the nearest neighbor" />
+    <MESSAGE value="Created method to resize images in threads" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created method to resize images in threads" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581266372996">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state x="184" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.812@0.23.1440.812" timestamp="1581266372996" />
-    <state x="533" y="145" key="#com.intellij.ide.util.MemberChooser" timestamp="1581266690294">
+    <state x="533" y="145" key="#com.intellij.ide.util.MemberChooser" timestamp="1581364571558">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state x="533" y="145" key="#com.intellij.ide.util.MemberChooser/0.23.1440.812@0.23.1440.812" timestamp="1581266690294" />
-    <state x="344" y="29" key="CommitChangelistDialog2" timestamp="1581274954118">
+    <state x="533" y="145" key="#com.intellij.ide.util.MemberChooser/0.23.1440.812@0.23.1440.812" timestamp="1581364571558" />
+    <state x="344" y="29" key="CommitChangelistDialog2" timestamp="1581275027746">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="344" y="29" key="CommitChangelistDialog2/0.23.1440.812@0.23.1440.812" timestamp="1581255351869" />
-    <state x="344" y="29" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1581274954118" />
-    <state width="1398" height="209" key="GridCell.Tab.0.bottom" timestamp="1581274955996">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="344" y="29" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1581275027746" />
+    <state width="1398" height="209" key="GridCell.Tab.0.bottom" timestamp="1581538550300">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state width="1398" height="209" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1581274477622" />
+    <state width="1398" height="209" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1581538550300" />
     <state width="1398" height="209" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1581274955996" />
-    <state width="1398" height="209" key="GridCell.Tab.0.center" timestamp="1581274955994">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="209" key="GridCell.Tab.0.center" timestamp="1581538550299">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state width="1398" height="209" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1581274477621" />
+    <state width="1398" height="209" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1581538550299" />
     <state width="1398" height="209" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1581274955994" />
-    <state width="1398" height="209" key="GridCell.Tab.0.left" timestamp="1581274955994">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="209" key="GridCell.Tab.0.left" timestamp="1581538550298">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state width="1398" height="209" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1581274477620" />
+    <state width="1398" height="209" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1581538550298" />
     <state width="1398" height="209" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1581274955994" />
-    <state width="1398" height="209" key="GridCell.Tab.0.right" timestamp="1581274955995">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="209" key="GridCell.Tab.0.right" timestamp="1581538550299">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state width="1398" height="209" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1581274477621" />
+    <state width="1398" height="209" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1581538550299" />
     <state width="1398" height="209" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1581274955995" />
+    <state width="1398" height="259" key="GridCell.Tab.1.bottom" timestamp="1581459754443">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.1.bottom/0.23.1440.812@0.23.1440.812" timestamp="1581459754443" />
+    <state width="1398" height="259" key="GridCell.Tab.1.center" timestamp="1581459754443">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.1.center/0.23.1440.812@0.23.1440.812" timestamp="1581459754443" />
+    <state width="1398" height="259" key="GridCell.Tab.1.left" timestamp="1581459754442">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.1.left/0.23.1440.812@0.23.1440.812" timestamp="1581459754442" />
+    <state width="1398" height="259" key="GridCell.Tab.1.right" timestamp="1581459754443">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.1.right/0.23.1440.812@0.23.1440.812" timestamp="1581459754443" />
     <state x="258" y="91" key="Maven.ArtifactSearchDialog" timestamp="1581266710791">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
@@ -185,10 +181,14 @@
       <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state x="503" y="214" key="chooseDestDirectoryDialog/0.23.1440.812@0.23.1440.812" timestamp="1581244404210" />
-    <state x="397" y="261" key="com.intellij.ide.util.TipDialog" timestamp="1581266261174">
+    <state x="100" y="123" width="1240" height="612" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1581454577814">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state x="397" y="261" key="com.intellij.ide.util.TipDialog/0.23.1440.812@0.23.1440.812" timestamp="1581266261174" />
+    <state x="100" y="123" width="1240" height="612" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.23.1440.812@0.23.1440.812" timestamp="1581454577814" />
+    <state x="397" y="261" key="com.intellij.ide.util.TipDialog" timestamp="1581537485759">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state x="397" y="261" key="com.intellij.ide.util.TipDialog/0.23.1440.812@0.23.1440.812" timestamp="1581537485759" />
     <state x="397" y="261" key="com.intellij.ide.util.TipDialog/0.23.1440.813@0.23.1440.813" timestamp="1581251221634" />
     <state x="378" y="64" width="683" height="729" key="find.popup" timestamp="1581244816253">
       <screen x="0" y="23" width="1440" height="813" />

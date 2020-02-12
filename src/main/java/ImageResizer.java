@@ -1,18 +1,15 @@
 import lombok.AllArgsConstructor;
-
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
-
 @AllArgsConstructor()
-public class ImageResizer extends Thread {
+public class ImageResizer implements Runnable {
 
     private File[] files;
     private int newWidth;
     private String dstFolder;
 
-    @Override
     public void run() {
         try {
             for (File file : files){
@@ -20,13 +17,10 @@ public class ImageResizer extends Thread {
 
                 if (image == null) continue;
 
-
                 int newHeight = (int) Math.round(
                         image.getHeight() / (image.getWidth() / (double) newWidth));
-
                 BufferedImage newImage =
                         new BufferedImage(newWidth,newHeight,BufferedImage.TYPE_INT_RGB);
-
                 int widthStep = image.getWidth() / newWidth;
                 int heightStep = image.getHeight() / newHeight;
 
